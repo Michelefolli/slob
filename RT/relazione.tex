@@ -22,9 +22,32 @@ The Control Unit had four output channels: three in order to measure the resisti
 All four channels were connected to a LabPro Interface, a DAQ device itself connected to a Lab PC, with LoggerPro Software for acquisition.
 The samples were then put into a dewar where they were first cooled by pouring liquid nitrogen into the dewar and then heated by the Control Unit to measure
 their behavior during a temperature sweep.
-\textcolor{red}{Seconda parte}
+For the second part of the experiment we used 5 wires of different unknown materials and diameters as samples and a SMU Keithley 2400 as a current generator and voltage analyzer.
+For lenght measurements we used a caliber (for the diameters) and a ruler (for the lenght of the wire).
 \subsection*{Acquisition Procedure}
 First we measured the resistivity at room temperature with 2-wire and 4-wire method (to compare the effectiveness of the methods), and set up LoggerPro to divide the outputs by the 4-wire measure, as to visualize the reduced calculated resistance to 
 better compare the measurements between the samples. For the temperature sweep we acquired measures with a sampling rate of 0.2 samples/s (One every 5 seconds). 
-Then, we poured the liquid nitrogen into the dewar and started the cooling ramp. When the temperature hit 98K we turned on the heater of the Control Unit, starting the heating ramp, until we reached 300K, where we removed the liquid nitrogen from the dewar and continued heating until 420K, where we stopped the acquisition.
+Then, we poured the liquid nitrogen into the dewar and started the cooling ramp. When the temperature hit 98K we turned on the heater of the Control Unit, starting the heating ramp,
+until we reached 300K, where we removed the liquid nitrogen from the dewar and continued heating until 420K, where we stopped the acquisition.\par 
+In the second part, we took five measurements for each wire with the 2-wire method, as well with the 4-wire, varying the distance between points of contact.
+
+\section{Results}
+\subsection*{Metal RT dependence}
+For Nickel and Copper we observe the expected linear relation between temperature and resistance, as shown in Figure ???.
+\par In particular fitted results give \textcolor{red}{dati slopes}. 
+The difference between the two slopes is attributed to \textcolor{purple}{consideration} 
+\subsection*{Germanium RT curve}
+For the Germanium sample the RT characterization is presented in Figure ???. As it was predicted by theory, at low temperature its behavior follows the one of a metal,
+having a linear relation, with fitted data which gives: \textcolor{red}{slope}.
+In the intrinsic region, the fitted law results in: \textcolor{red}{law}.
+\subsection*{2-wire vs 4-wire method}
+For this second part, results of measurements obtained with the two methods for the voltage across different regions of the five sample wires are presented in Figure ??? and ???.\par 
+For such relation, the expected fit should give an intercept value of zero. Observed values for this parameter are attributed to a parasitic resistance due to the instruments used. To further consolidate this hypothesis, results show a 
+smaller value for the 4-wire method in all cases, confirming the efficacy of this method over the 2-wire one. \par
+The resistivity for each wire was then calculated as: 
+\begin{equation}
+    \rho = \frac{V}{L} \frac{\pi d^2}{4I},
+\end{equation}
+where $\frac{V}{L}$ is the intercept given by the the linear fit, $d$ is the diameter of the sample wire and $I$ is the generator current (fixed at \textcolor{red}{dato}).
+Results of these calculations and possible hypothesis on the unknown materials are shown in Table ???
 \end{document}
